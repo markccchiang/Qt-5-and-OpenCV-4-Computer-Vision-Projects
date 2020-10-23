@@ -11,26 +11,35 @@
 #include <QLabel>
 #include <QGraphicsPixmapItem>
 
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
+class MainWindow : public QMainWindow {
+Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent=nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
+
     ~MainWindow();
 
 private:
     void initUI();
+
     void createActions();
+
     void showImage(QString);
+
     void setupShortcuts();
 
 private slots:
+
     void openImage();
+
     void zoomIn();
+
     void zoomOut();
+
     void prevImage();
+
     void nextImage();
+
     void saveAs();
 
 private:
